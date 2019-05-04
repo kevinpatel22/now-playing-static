@@ -194,7 +194,7 @@ figure {
 .about > p {
   margin: 0;
 }
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
   .site-nav {
     top: 100px;
     width:4em;
@@ -236,7 +236,7 @@ figure {
     padding-bottom: 0;
   }
 }
-@media screen and (min-width:992px) { 
+@media (min-width:992px) { 
   .movie-overview {
       display: none;
   }
