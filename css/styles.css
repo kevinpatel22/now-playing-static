@@ -117,7 +117,6 @@ figure {
 .movie-poster {
   display: none;
 }
-
 .movie-details {
   position: absolute;
   bottom: 0;
@@ -194,4 +193,64 @@ figure {
 
 .about > p {
   margin: 0;
+}
+@media screen and (min-width:768px) {
+  .site-nav {
+    top: 100px;
+    width:4em;
+    z-index: 99;
+  }
+  .site-nav-item {
+    display: flex;
+    flex-direction: column;
+    width: 120%;  
+  }
+  .site-logo {
+    width: 60px;
+    left: 10px;
+    margin-right: 5em;
+  }
+  .movie-overview {
+    display: flex;
+  }
+  main {
+    margin-left: 5em;
+  }
+  img {
+    width: 100%;
+  }
+  .site-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: black;
+    color: white;
+    margin-left: 5em;
+  }
+  .footer-nav {
+    margin-left: 6em;
+  }
+  .about {
+    background: black;
+  }
+  body {
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width:992px) { 
+  .movie-overview {
+      display: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movie:first-child {
+    grid-column: 1 / 4;
+  }
+  .movie:not(:first-child) .movie-backdrop {
+    display: none;
+  }
+  .movie:not(:first-child) .movie-poster {
+    display: block;
+  }
 }
